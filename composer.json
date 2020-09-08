@@ -1,0 +1,29 @@
+{
+    "name": "gmichelan2/sistema_permisos",
+    "description": "Sistema de roles y permisos en Laravel 7",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gaston Michelan",
+            "email": "gaston.emiliano.michelan@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Gmichelan2\\Sistema_permisos\\":"src/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench":"^5.3"
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Gmichelan2\\Sistema_permisos\\SistemaPermisosServiceProvider",
+                "Gmichelan2\\Sistema_permisos\\AuthServiceProvider"
+            ]
+        }
+    }
+}
