@@ -2,11 +2,10 @@
 
 namespace Gmichelan2\Sistema_permisos\Models;
 
-use App\Role;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use App\Traits\UserTrait;
+use Gmichelan2\Sistema_permisos\Traits\UserTrait;
 
 
 

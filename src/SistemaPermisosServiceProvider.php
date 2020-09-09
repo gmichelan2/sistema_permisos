@@ -52,5 +52,10 @@ class SistemaPermisosServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/SistemaPermisos.php'=> config_path('SistemaPermisos.php'),'SistemaPermisos-config'
         ]);//van si o si dentro de /vendor/[namespace]
+
+        //publicar el modelo de usuario
+        $this->publishes([
+            __DIR__.'Models/User.php'=>app_path(),'SistemaPermisos-userModel'
+        ]);
     }
 }
